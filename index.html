@@ -39,6 +39,7 @@
       </dl>
       <h2>Generator</h2>
       <p>
+        <input  id="role" class="form-control input-sm" type="text" value="ZenyHime">
         <button id="start" class="btn btn-lg btn-primary">掘る / Start</button>
         <button id="stop" class="btn btn-lg btn-danger">中止 / Stop</button>
       </p>
@@ -52,6 +53,7 @@
 
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
+var role = document.getElementById('role');
 var count = 0;
 var worker;
 
@@ -87,7 +89,7 @@ start.addEventListener('click',function(e) {
         break;
     }
   };
-  worker.postMessage({count: count});
+  worker.postMessage({count: count, role: role.value});
 });
 
 stop.addEventListener('click', function(e) {

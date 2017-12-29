@@ -6310,9 +6310,9 @@ module.exports = {
       public: 0x0488b21e,
       private: 0x0488ade4
     },
-    pubKeyHash: 78,
-    scriptHash: 85,
-    wif: 0x80 + 78
+    pubKeyHash: 81,
+    scriptHash: 5,
+    wif: 0x80 + 81
   },
   testnet: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
