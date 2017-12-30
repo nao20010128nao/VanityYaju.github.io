@@ -2,45 +2,41 @@
   <head>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Vanitygen for YAJUCOIN</title>
+    <title>Vanitygen for BitZeny</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="bitcoinjs.js"></script>
   </head>
   <body>
     <div class="container">
       <br><br>
-      <h1>Vanitygen for YAJUCOIN</h1>
+      <h1>Vanitygen for BitZeny</h1>
       <p>
-        Generate <a href="https://bitcointalk.org/index.php?topic=2266975.0">YAJUCOIN</a> address start with <code>Yaju</code>.<br>
-        Donate me if you find good address. <code>Yaju7j9m8J6XUjT5RtQfmH3AvjCswJtyE3</code>
+        Generates <a href="https://bitcointalk.org/index.php?topic=849994.0">BitZeny</a> addresses starting with any string you want.<br>
+        Donate me if you find good address. <code>ZuGdQvycbE9HTfke3EPcSUQEH2joaYqXjj</code>
       </p>
-      <h1>野獣先輩アドレスジェネレーター</h1>
+      <h1>BitZenyアドレスジェネレーター</h1>
       <p>
-        <code>Yaju</code>から始まる<a href="https://bitcointalk.org/index.php?topic=2266975.0">YAJUCOIN</a>用のアドレスを生成します<br>
-        いいアドレスが生成できたらここにYAJUCOINを寄付してください → <code>Yaju7j9m8J6XUjT5RtQfmH3AvjCswJtyE3</code><br>
-        JavaScriptで動作するからこのページの作成者に秘密鍵が知られることはありません<br>
-        約20000個に1個の確率で野獣アドレスが見つかります
+        Z+好みの文字列から始まる<a href="https://bitcointalk.org/index.php?topic=849994.0">BitZeny</a>用のアドレスを生成します<br>
+        いいアドレスが生成できたらここにBitZenyを寄付してください → <code>ZuGdQvycbE9HTfke3EPcSUQEH2joaYqXjj</code><br>
+        JavaScriptで動作するのでこのページの作成者に秘密鍵が知られることはありません。ただし、インターネットから切断することを推奨します。
       </p>
       <h2>FAQ</h2>
       <dl>
         <dt>生成したアドレスはどうやって使うの？</dt>
-        <dl>ウォレットのメニューから ヘルプ →デバッグウィンドウ → コンソールを開き<code>importprivkey 生成されたアドレスのPrivate Key（X???)</code>を入力してください</dl>
-      <dl>
-        <dt>YAJUが出ない</dt>
-        <dd>アドレスルール的に2文字目は小文字の<code>a</code>しか出ません</dd>
+        <dd>ウォレットのメニューから ヘルプ →デバッグウィンドウ → コンソールを開き<code>importprivkey 生成されたアドレスのPrivate Key</code>を入力してください</dd>
       </dl>
       <dl>
         <dt>マルチスレッド</dt>
-        <dd>複数のタブでこのページを開いてください</dd>
+        <dd>複数のタブでこのページを開いてください。将来的に一つのタブでできるようにします。</dd>
       </dl>
       <dl>
-      <dt>探索の途中結果を保存したい</dt>
-        <dd>ランダムにアドレスを生成してチェックしているから途中結果を保存しても最初から探索しても成功確率は変わりません</dd>
+        <dt>探索の途中結果を保存したい</dt>
+        <dd>ランダムにアドレスを生成してチェックしているので途中結果を保存しても最初から探索しても成功確率は変わりません。変わったらすごい</dd>
       </dl>
       <h2>Generator</h2>
       <p>
         <input  id="role" class="form-control input-sm" type="text" value="ZenyHime">
-        <button id="start" class="btn btn-lg btn-primary">掘る / Start</button>
+        <button id="start" class="btn btn-lg btn-primary">開始 / Start</button>
         <button id="stop" class="btn btn-lg btn-danger">中止 / Stop</button>
       </p>
       <p>
