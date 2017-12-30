@@ -2,7 +2,11 @@ onmessage = function(message) {
   importScripts('bitcoinjs.js');
   var pair = bitcoin.ECPair;
   var count = +message.data.count;
-  var role = message.data.role+""
+  var role = message.data.role+"";
+  setInterval(function(){
+    postMessage({event: 'count',
+                 count: count});
+  },1000);
   while(true) {
     var key = pair.makeRandom()
     var address = key.getAddress();
@@ -12,9 +16,5 @@ onmessage = function(message) {
                    privkey: key.toWIF()});
     }
     count++;
-    if(count%81==0) {
-      postMessage({event: 'count',
-                   count: count});
-    }
   }
 }
