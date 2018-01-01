@@ -1,5 +1,5 @@
 onmessage = function(message) {
-  importScripts('bitcoinjs.js');
+  importScripts('bitcoinjsmin..js');
   var pair = bitcoin.ECPair;
   var count = +message.data.count;
   var role = message.data.role+"";
